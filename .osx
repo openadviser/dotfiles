@@ -62,6 +62,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Change strandard clock to 'analogue' mode
+defaults write com.apple.menuextra.clock IsAnalog -bool true
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -171,6 +174,9 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
+
+# Keep folders on top
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
